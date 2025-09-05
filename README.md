@@ -30,7 +30,7 @@
   ```
 
 
-##  Uso Web
+##  RUTA API
 Accede a la aplicación en [http://localhost:8000/proyectos](http://localhost:8000/proyectos).
 
 ##  Endpoints principales
