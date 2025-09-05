@@ -1,4 +1,4 @@
-# 15-eval1-api-migrate-db-test-README BRANCH merged
+# EVA3
 ##  Instalación y configuración
 1. **Instala las dependencias PHP:**
   ```bash
@@ -15,6 +15,7 @@
   php artisan jwt:secret
   ```
 4. **Configura la base de datos en el archivo `.env`.**
+
 5. **Ejecuta las migraciones:**
   ```bash
   php artisan migrate
@@ -23,7 +24,8 @@
   ```bash
   php artisan serve
   ```
-## Seeders 
+
+7. **Seeders**
  - Ejecuta los seeders para poblar la base de datos:
   ```bash
   php artisan db:seed
@@ -46,7 +48,6 @@ Accede a la aplicación en [http://localhost:8000/proyectos](http://localhost:80
 | **PATCH**  | `/api/proyectosAPI/{id}`     | Actualizar proyecto por ID            |
 | **DELETE** | `/api/proyectosAPI/{id}`     | Eliminar proyecto por ID              |
 | **GET**    | `/api/user`                  | Obtener usuario autenticado (JWT)     |
-> **Nota:** Todos los endpoints API están activos en `routes/api.php` y utilizan el prefijo `/api`.
 
 
 
@@ -78,24 +79,7 @@ Accede a la aplicación en [http://localhost:8000/proyectos](http://localhost:80
   - Recibirás un token JWT en la respuesta.
 
 3. **Usar el token en endpoints protegidos:**
-  - Agrega el header:
-  ```
-  Authorization: Bearer TU_TOKEN_JWT
-  ```
-  - Ejemplo para obtener proyectos:
-  - Método: GET
-  - URL: `http://localhost:8000/api/proyectosAPI`
-  - Header: `Authorization: Bearer TU_TOKEN_JWT`
-4. **Eliminar un proyecto:**
-  - Método: DELETE
-  - URL: `http://localhost:8000/api/proyectosAPI/4`
-  - Header: `Authorization: Bearer TU_TOKEN_JWT`
-  - Respuesta:
-  ```json
-  {
-  "message": "Proyecto eliminado correctamente"
-  }
-  ```
+
 
 ##  Ejemplo de uso de seeders y factories
 - Ejecuta un seeder de usuarios:
