@@ -8,15 +8,26 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
 {
-
-    // Funcion para registrar un nuevo usuario y devolver el token JWT
+///////////////////////////////////////////////////////
+    // Funcion para registrar un nuevo usuario y devolver el token JWT API
     public function register(Request $request)
     {
-        $request->validate([
-            'name' => 'required|string|max:100',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|min:6'
-        ]);
+        try {
+            $request->validate([
+                'name' => 'required|string|max:100|unique:users,name',
+                'email' => 'required|email|unique:users,email',
+                'password' => 'required|min:6'
+            ], [
+                'name.unique' => 'El nombre de usuario ya está en uso.',
+                'email.unique' => 'El usuario ya existe con ese correo electrónico.'
+            ]);
+        } catch (\Illuminate\Validation\ValidationException $e) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Error de validación',
+                'errors' => $e->errors()
+            ], 422);
+        }
 
         $user = User::create([
             'name' => $request->name,
@@ -25,9 +36,38 @@ class AuthController extends Controller
         ]);
 
         $token = JWTAuth::fromUser($user);
-
-        return response()->json(['user' => $user, 'token' => $token], 201);
+        return response()->json([
+            'status' => 'success',
+            'user' => $user, 'token' => $token], 201);
     }
+
+
+    public function loginApi(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+        if (!$token = JWTAuth::attempt($credentials)) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Credenciales inválidas'
+            ], 401);
+        }
+        return response()->json([
+            'status' => 'success',
+            'token' => $token
+        ], 200);
+    }
+
+/////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
 
      // Funcion para registrar usuario desde la web
     public function registerWeb(Request $request)
@@ -48,8 +88,6 @@ class AuthController extends Controller
         return redirect()->back()->with('usuario_creado', true);
     }
 
-
-    
     // Funcion para iniciar sesión y devolver el token JWT
     /* public function login(Request $request)
     {
@@ -62,16 +100,6 @@ class AuthController extends Controller
         return response()->json(['token' => $token]);
     }*/
 
-
-    public function loginApi(Request $request)
-    {
-        $credentials = $request->only('email', 'password');
-        if (!$token = JWTAuth::attempt($credentials)) {
-            return response()->json(['error' => 'Credenciales inválidas'], 401);
-        }
-        return response()->json(['token' => $token]);
-    }
-
     // Login para web
     public function loginWeb(Request $request)
     {
@@ -82,7 +110,6 @@ class AuthController extends Controller
         return redirect()->back()->with('success', 'Login exitoso. Token: ' . $token);
     }
     
-
     /*// Funcion para obtener el perfil del usuario autenticado
     public function perfil()
     {
