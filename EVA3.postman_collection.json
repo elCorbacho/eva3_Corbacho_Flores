@@ -1,0 +1,650 @@
+{
+	"info": {
+		"_postman_id": "b5ecc674-5852-46bb-b07d-b640d7f31f9f",
+		"name": "EVA3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44203539",
+		"_collection_link": "https://andres-8731020.postman.co/workspace/andres's-Workspace~eabfc33a-3c9d-49a6-81de-a2fa2d0e89a8/collection/44203539-b5ecc674-5852-46bb-b07d-b640d7f31f9f?action=share&source=collection_link&creator=44203539"
+	},
+	"item": [
+		{
+			"name": "3 - get proyectos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzU3MDQ2Njg4LCJleHAiOjE3NTcwNTAyODgsIm5iZiI6MTc1NzA0NjY4OCwianRpIjoiaDFlTnJMbnVyWURCVVV3cCIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.WvoXHO8L1TR68IM-tE6_EwSJdNhzfhvbq1KSEJS5dDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/proyectosAPI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"proyectosAPI"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get proyectos 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 03:26:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nombre\": \"Sistema de Inventario\",\n            \"fecha_inicio\": \"2025-01-10\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Ana Torres\",\n            \"monto\": \"15000.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"nombre\": \"Sitio Web Corporativo\",\n            \"fecha_inicio\": \"2025-02-05\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Carlos Pérez\",\n            \"monto\": \"8000.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"nombre\": \"App de Tareas\",\n            \"fecha_inicio\": \"2025-03-12\",\n            \"estado\": \"inactivo\",\n            \"responsable\": \"Lucía Gómez\",\n            \"monto\": \"5000.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"nombre\": \"E-commerce\",\n            \"fecha_inicio\": \"2025-04-20\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Miguel Rojas\",\n            \"monto\": \"20000.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"nombre\": \"Blog Técnico\",\n            \"fecha_inicio\": \"2025-05-15\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Sofía Ramírez\",\n            \"monto\": \"3000.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"nombre\": \"Sistema de Reservas\",\n            \"fecha_inicio\": \"2025-06-01\",\n            \"estado\": \"inactivo\",\n            \"responsable\": \"Pedro Castillo\",\n            \"monto\": \"7000.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"nombre\": \"Plataforma de Cursos\",\n            \"fecha_inicio\": \"2025-06-18\",\n            \"estado\": \"activo\",\n            \"responsable\": \"María López\",\n            \"monto\": \"12000.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"nombre\": \"Gestor de Clientes\",\n            \"fecha_inicio\": \"2025-07-03\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Juan Martínez\",\n            \"monto\": \"9000.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 9,\n            \"nombre\": \"Red Social\",\n            \"fecha_inicio\": \"2025-07-25\",\n            \"estado\": \"inactivo\",\n            \"responsable\": \"Valeria Díaz\",\n            \"monto\": \"25000.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"nombre\": \"Sistema de Encuestas\",\n            \"fecha_inicio\": \"2025-08-10\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Andrés Corbacho\",\n            \"monto\": \"6000.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"nombre\": \"consectetur labore est consequuntur corporis est consequatur beatae molestiae ea\",\n            \"fecha_inicio\": \"1973-03-10\",\n            \"estado\": \"inactivo\",\n            \"responsable\": \"Ms. Queen Gutkowski III\",\n            \"monto\": \"2085166.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"nombre\": \"modi modi architecto adipisci praesentium reiciendis consectetur saepe perferendis fugit\",\n            \"fecha_inicio\": \"1970-07-16\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Prof. Gabriel Schulist DDS\",\n            \"monto\": \"2438056.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"nombre\": \"et sint omnis eius et impedit vel tempore animi eos\",\n            \"fecha_inicio\": \"1985-11-13\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Dr. Bradford Morissette\",\n            \"monto\": \"1776924.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 14,\n            \"nombre\": \"rerum a dolorem soluta qui voluptatem asperiores sed perspiciatis atque\",\n            \"fecha_inicio\": \"1973-04-28\",\n            \"estado\": \"inactivo\",\n            \"responsable\": \"Herbert Schneider\",\n            \"monto\": \"2057937.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 15,\n            \"nombre\": \"sed sit nihil accusamus ad minima qui ea eligendi ex\",\n            \"fecha_inicio\": \"2013-10-27\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Mr. Ethel Flatley\",\n            \"monto\": \"1413579.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 16,\n            \"nombre\": \"aut minus aut temporibus autem nobis similique sunt et libero\",\n            \"fecha_inicio\": \"1991-02-20\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Chyna Runte DVM\",\n            \"monto\": \"1309518.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 17,\n            \"nombre\": \"nesciunt dolores at nisi nemo velit quos sed tempora saepe\",\n            \"fecha_inicio\": \"1970-03-23\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Prof. Benny Leuschke PhD\",\n            \"monto\": \"2391601.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 18,\n            \"nombre\": \"labore totam quisquam qui ea sit qui eos accusantium at\",\n            \"fecha_inicio\": \"1973-05-19\",\n            \"estado\": \"inactivo\",\n            \"responsable\": \"Brent Greenfelder\",\n            \"monto\": \"270343.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 19,\n            \"nombre\": \"magni ullam voluptas saepe a sed omnis distinctio ut aliquam\",\n            \"fecha_inicio\": \"1971-12-08\",\n            \"estado\": \"inactivo\",\n            \"responsable\": \"Miss Naomi Green Sr.\",\n            \"monto\": \"600331.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        },\n        {\n            \"id\": 20,\n            \"nombre\": \"similique qui beatae suscipit consectetur voluptatem qui soluta dolorem natus\",\n            \"fecha_inicio\": \"2017-06-15\",\n            \"estado\": \"activo\",\n            \"responsable\": \"Miracle Botsford\",\n            \"monto\": \"2153434.00\",\n            \"created_by\": 1,\n            \"created_at\": \"2025-09-05T03:20:45.000000Z\",\n            \"updated_at\": \"2025-09-05T03:20:45.000000Z\"\n        }\n    ],\n    \"message\": \"Proyectos obtenidos correctamente\"\n}"
+				},
+				{
+					"name": "get proyectos 404",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 03:27:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"data\": [],\n    \"message\": \"No se encontraron proyectos\"\n}"
+				}
+			]
+		},
+		{
+			"name": "5 - creacion de un proyecto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzU3MDQ2Njg4LCJleHAiOjE3NTcwNTAyODgsIm5iZiI6MTc1NzA0NjY4OCwianRpIjoiaDFlTnJMbnVyWURCVVV3cCIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.WvoXHO8L1TR68IM-tE6_EwSJdNhzfhvbq1KSEJS5dDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"98909090989898\",\r\n  \"fecha_inicio\": \"1999-01-01\",\r\n  \"estado\": \"activo\",\r\n  \"responsable\": \"yo\",\r\n  \"monto\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:8000}}/api/proyectosAPI",
+					"host": [
+						"{{http://localhost:8000}}"
+					],
+					"path": [
+						"api",
+						"proyectosAPI"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "creacion de un proyecto 201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"98909090989898\",\r\n  \"fecha_inicio\": \"1999-01-01\",\r\n  \"estado\": \"activo\",\r\n  \"responsable\": \"yo\",\r\n  \"monto\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{http://localhost:8000}}/api/proyectosAPI",
+							"host": [
+								"{{http://localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"proyectosAPI"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 03:51:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"nombre\": \"98909090989898\",\n        \"fecha_inicio\": \"1999-01-01\",\n        \"estado\": \"activo\",\n        \"responsable\": \"yo\",\n        \"monto\": 100,\n        \"created_by\": null,\n        \"updated_at\": \"2025-09-05T03:51:57.000000Z\",\n        \"created_at\": \"2025-09-05T03:51:57.000000Z\",\n        \"id\": 34\n    },\n    \"message\": \"Proyecto creado correctamente\"\n}"
+				}
+			]
+		},
+		{
+			"name": "6 - edicion de un proyecto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzU3MDQ2Njg4LCJleHAiOjE3NTcwNTAyODgsIm5iZiI6MTc1NzA0NjY4OCwianRpIjoiaDFlTnJMbnVyWURCVVV3cCIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.WvoXHO8L1TR68IM-tE6_EwSJdNhzfhvbq1KSEJS5dDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Proye69758776cto de ejemplo\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:8000}}/api/proyectosAPI/21",
+					"host": [
+						"{{http://localhost:8000}}"
+					],
+					"path": [
+						"api",
+						"proyectosAPI",
+						"21"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Proyecto de ejeiiimplo\",\r\n    \"fecha_inicio\": \"2025-08-06\",\r\n    \"estado\": \"En progiireso\",\r\n    \"responsable\": \"Juan Péiirez\",\r\n    \"monto\": \"15099900.00\",\r\n    \"created_at\": \"2025-08-07T01:40:03.000000Z\",\r\n    \"updated_at\": \"2025-08-07T01:40:03.000000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Aug 2025 03:29:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"nombre\": \"Proyecto de ejeiiimplo\",\n    \"fecha_inicio\": \"2025-08-06\",\n    \"estado\": \"En progiireso\",\n    \"responsable\": \"Juan Péiirez\",\n    \"monto\": \"15099900.00\",\n    \"created_at\": \"2025-08-07T01:40:03.000000Z\",\n    \"updated_at\": \"2025-08-07T03:29:50.000000Z\"\n}"
+				},
+				{
+					"name": "edicion de un proyecto",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Proye6977777777777778787879987098709870987687698678587658776cto de ejemplo\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{http://localhost:8000}}/api/proyectosAPI/2",
+							"host": [
+								"{{http://localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"proyectosAPI",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Aug 2025 00:15:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"nombre\": \"Proye6977777777777778787879987098709870987687698678587658776cto de ejemplo\",\n    \"fecha_inicio\": \"2025-02-05\",\n    \"estado\": \"activo\",\n    \"responsable\": \"Carlos Pérez\",\n    \"monto\": \"8000.00\",\n    \"created_at\": \"2025-08-16T00:07:46.000000Z\",\n    \"updated_at\": \"2025-08-16T00:15:05.000000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "7 - Delete de proyecto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzU3MDQ2Njg4LCJleHAiOjE3NTcwNTAyODgsIm5iZiI6MTc1NzA0NjY4OCwianRpIjoiaDFlTnJMbnVyWURCVVV3cCIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.WvoXHO8L1TR68IM-tE6_EwSJdNhzfhvbq1KSEJS5dDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/proyectosAPI/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"proyectosAPI",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Aug 2025 03:30:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Proyecto eliminado correctamente\"\n}"
+				},
+				{
+					"name": "Delete de proyecto",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Aug 2025 00:15:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Proyecto eliminado correctamente\"\n}"
+				}
+			]
+		},
+		{
+			"name": "4 - get id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzU3MDQ2Njg4LCJleHAiOjE3NTcwNTAyODgsIm5iZiI6MTc1NzA0NjY4OCwianRpIjoiaDFlTnJMbnVyWURCVVV3cCIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.WvoXHO8L1TR68IM-tE6_EwSJdNhzfhvbq1KSEJS5dDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/proyectosAPI/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"proyectosAPI",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get id 404",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI",
+								"1"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 03:27:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"data\": [],\n    \"message\": \"Proyecto no encontrado\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "http://localhost:8000",
+			"value": "http://localhost:8000",
+			"type": "default"
+		}
+	]
+}

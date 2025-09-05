@@ -64,3 +64,8 @@ Accede a la aplicación en [http://localhost:8000/proyectos](http://localhost:80
   ```bash
   php artisan db:seed --class=proyectos_factory
   ```
+
+##  Ejemplo de pruebas en postman
+```bash
+EVA3.postman_collection.json
+```
