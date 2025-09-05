@@ -55,10 +55,6 @@ Accede a la aplicación en [http://localhost:8000/proyectos](http://localhost:80
 | **DELETE**| `/api/proyectosAPI/{id}`     | Eliminar proyecto por ID                 |
 
 
-
-**Usar el token en endpoints protegidos:**
-
-
 ##  Ejemplo de uso de seeders y factories
 - Ejecuta un seeder de usuarios:
   ```bash
@@ -68,13 +64,3 @@ Accede a la aplicación en [http://localhost:8000/proyectos](http://localhost:80
   ```bash
   php artisan db:seed --class=proyectos_factory
   ```
-
-##  Estructura principal
-- `app/Models/Proyecto.php` — Modelo Eloquent para proyectos
-- `app/Models/User.php` — Modelo Eloquent para usuarios
-- `database/migrations/` — Migraciones de base de datos
-- `database/seeders/` — Seeders para poblar datos
-- `database/factories/` — Factories para datos de prueba
-- `routes/web.php` — Rutas web (vistas y formularios)
-- `routes/api.php` — Rutas API (JSON y JWT)
----
