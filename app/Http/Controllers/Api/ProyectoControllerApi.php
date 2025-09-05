@@ -1,10 +1,12 @@
 <?php
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Models\Proyecto;
 //use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Illuminate\Validation\ValidationException;
+use App\Http\Controllers\Controller;
+
 
 
 class ProyectoControllerApi extends Controller
@@ -12,7 +14,7 @@ class ProyectoControllerApi extends Controller
 
 //////////////////////////////////////////////////
 // Funcion API para obtener todos los proyectos (GET)
-    public function get(): JsonResponse
+    public function index(): JsonResponse
     {
         $proyectos = Proyecto::all(); // Asignar antes de usar
 
@@ -35,7 +37,7 @@ class ProyectoControllerApi extends Controller
 
 ///////////////////////////////////////////////////
 // Funcion API para obtener proyecto por ID (GET)
-    public function getById($id): JsonResponse
+    public function show($id): JsonResponse
     {
 
         $proyecto = Proyecto::find($id);
@@ -59,7 +61,7 @@ class ProyectoControllerApi extends Controller
 
 ///////////////////////////////////////////////////////
 // Funcion API para crear un nuevo proyecto (POST) y devolver el JSON del proyecto creado
-    public function post(Request $request): JsonResponse
+    public function store(Request $request): JsonResponse
     {
         try {
             $validatedData = $request->validate([
@@ -162,7 +164,7 @@ class ProyectoControllerApi extends Controller
 
 ///////////////////////////////////////////////
 // Funcion API para eliminar un proyecto (DELETE)
-    public function delete($id): JsonResponse
+    public function destroy($id): JsonResponse
     {
         $proyecto = Proyecto::find($id);
         if (!$proyecto) {
