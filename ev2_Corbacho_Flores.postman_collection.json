@@ -1,0 +1,985 @@
+{
+	"info": {
+		"_postman_id": "e797c3bd-eb26-4a6c-a295-2d59600a2193",
+		"name": "ev2_Corbacho_Flores",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44203539",
+		"_collection_link": "https://andres-8731020.postman.co/workspace/andres's-Workspace~eabfc33a-3c9d-49a6-81de-a2fa2d0e89a8/collection/44203539-e797c3bd-eb26-4a6c-a295-2d59600a2193?action=share&source=collection_link&creator=44203539"
+	},
+	"item": [
+		{
+			"name": "get token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzU1MjkxMDIxLCJleHAiOjE3NTUyOTQ2MjEsIm5iZiI6MTc1NTI5MTAyMSwianRpIjoiVkROakxpYTVCQzkyVXFiOCIsInN1YiI6IjIwIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.vfg2-Nmna4GDV5FeB-FHJJpPQtkTkBjEY1surTtHsR8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/proyectosAPI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"proyectosAPI"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get token",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Aug 2025 03:55:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"nombre\": \"Proyecto de ejemplo\",\n        \"fecha_inicio\": \"2025-08-06\",\n        \"estado\": \"En progr999eso\",\n        \"responsable\": \"Juan Pérez\",\n        \"monto\": \"150054550.00\",\n        \"created_at\": \"2025-08-07T01:42:37.000000Z\",\n        \"updated_at\": \"2025-08-07T04:05:31.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"nombre\": \"Proyecto de ejemplo\",\n        \"fecha_inicio\": \"2025-08-06\",\n        \"estado\": \"En progreso\",\n        \"responsable\": \"Juan Pérez\",\n        \"monto\": \"15000.00\",\n        \"created_at\": \"2025-08-07T01:42:40.000000Z\",\n        \"updated_at\": \"2025-08-07T01:42:40.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"TESTO DB\",\n        \"fecha_inicio\": \"2025-08-06\",\n        \"estado\": \"ACTIVOIIIII\",\n        \"responsable\": \"PASIVO\",\n        \"monto\": \"9898.00\",\n        \"created_at\": \"2025-08-07T02:30:24.000000Z\",\n        \"updated_at\": \"2025-08-07T03:56:10.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"nombre\": \"Proyecto de ejemplo\",\n        \"fecha_inicio\": \"2025-08-06\",\n        \"estado\": \"En progreso\",\n        \"responsable\": \"Juan Pérez\",\n        \"monto\": \"15000.00\",\n        \"created_at\": \"2025-08-07T03:27:47.000000Z\",\n        \"updated_at\": \"2025-08-07T03:27:47.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"nombre\": \"Proyecto de ejemplo\",\n        \"fecha_inicio\": \"2025-08-06\",\n        \"estado\": \"En progreso\",\n        \"responsable\": \"Juan Pérez\",\n        \"monto\": \"15000.00\",\n        \"created_at\": \"2025-08-07T04:37:14.000000Z\",\n        \"updated_at\": \"2025-08-07T04:37:14.000000Z\"\n    },\n    {\n        \"id\": 7,\n        \"nombre\": \"Proyecto de ejemplo\",\n        \"fecha_inicio\": \"2025-08-06\",\n        \"estado\": \"En progreso\",\n        \"responsable\": \"Juan Pérez\",\n        \"monto\": \"15000.00\",\n        \"created_at\": \"2025-08-08T03:07:31.000000Z\",\n        \"updated_at\": \"2025-08-08T03:07:31.000000Z\"\n    },\n    {\n        \"id\": 8,\n        \"nombre\": \"Proye6987968769876cto de ejemplo\",\n        \"fecha_inicio\": \"2025-08-06\",\n        \"estado\": \"En progreso\",\n        \"responsable\": \"Juan Pérez\",\n        \"monto\": \"15000.00\",\n        \"created_at\": \"2025-08-08T03:07:57.000000Z\",\n        \"updated_at\": \"2025-08-08T03:07:57.000000Z\"\n    }\n]"
+				},
+				{
+					"name": "get token",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Aug 2025 00:13:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"nombre\": \"Sitio W323232eb Corporativo\",\n    \"fecha_inicio\": \"2025-02-05\",\n    \"estado\": \"activo\",\n    \"responsable\": \"Carlos Pérez\",\n    \"monto\": \"8000.00\",\n    \"created_at\": \"2025-08-16T00:07:46.000000Z\",\n    \"updated_at\": \"2025-08-16T00:09:19.000000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "creacion de un proyecto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvbG9naW4iLCJpYXQiOjE3NTUzMDMwNTAsImV4cCI6MTc1NTMwNjY1MCwibmJmIjoxNzU1MzAzMDUwLCJqdGkiOiI1YlpoM1JYUWdwdDhuOHBrIiwic3ViIjoiMTciLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.DnAOIYbE7e9FZ9whp_GGubRzLQX30xu4G5CeF3hTF4I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Proye987987987cto de ejemplo\",\r\n  \"fecha_inicio\": \"2025-08-06\",\r\n  \"estado\": \"En progreso\",\r\n  \"responsable\": \"Juan Pérez\",\r\n  \"monto\": 15000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:8000}}/api/proyectosAPI",
+					"host": [
+						"{{http://localhost:8000}}"
+					],
+					"path": [
+						"api",
+						"proyectosAPI"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Proyecto de ejemplo\",\r\n  \"fecha_inicio\": \"2025-08-06\",\r\n  \"estado\": \"En progreso\",\r\n  \"responsable\": \"Juan Pérez\",\r\n  \"monto\": 15000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Aug 2025 03:27:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nombre\": \"Proyecto de ejemplo\",\n    \"fecha_inicio\": \"2025-08-06\",\n    \"estado\": \"En progreso\",\n    \"responsable\": \"Juan Pérez\",\n    \"monto\": 15000,\n    \"updated_at\": \"2025-08-07T03:27:47.000000Z\",\n    \"created_at\": \"2025-08-07T03:27:47.000000Z\",\n    \"id\": 5\n}"
+				},
+				{
+					"name": "creacion de un proyecto",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Proye987987987cto de ejemplo\",\r\n  \"fecha_inicio\": \"2025-08-06\",\r\n  \"estado\": \"En progreso\",\r\n  \"responsable\": \"Juan Pérez\",\r\n  \"monto\": 15000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{http://localhost:8000}}/api/proyectosAPI",
+							"host": [
+								"{{http://localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"proyectosAPI"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Aug 2025 00:14:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nombre\": \"Proye987987987cto de ejemplo\",\n    \"fecha_inicio\": \"2025-08-06\",\n    \"estado\": \"En progreso\",\n    \"responsable\": \"Juan Pérez\",\n    \"monto\": 15000,\n    \"updated_at\": \"2025-08-16T00:14:40.000000Z\",\n    \"created_at\": \"2025-08-16T00:14:40.000000Z\",\n    \"id\": 22\n}"
+				}
+			]
+		},
+		{
+			"name": "edicion de un proyecto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzU1MjkxMDIxLCJleHAiOjE3NTUyOTQ2MjEsIm5iZiI6MTc1NTI5MTAyMSwianRpIjoiVkROakxpYTVCQzkyVXFiOCIsInN1YiI6IjIwIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.vfg2-Nmna4GDV5FeB-FHJJpPQtkTkBjEY1surTtHsR8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Proye69777777777777879987098709870987687698678587658776cto de ejemplo\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:8000}}/api/proyectosAPI/21",
+					"host": [
+						"{{http://localhost:8000}}"
+					],
+					"path": [
+						"api",
+						"proyectosAPI",
+						"21"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Proyecto de ejeiiimplo\",\r\n    \"fecha_inicio\": \"2025-08-06\",\r\n    \"estado\": \"En progiireso\",\r\n    \"responsable\": \"Juan Péiirez\",\r\n    \"monto\": \"15099900.00\",\r\n    \"created_at\": \"2025-08-07T01:40:03.000000Z\",\r\n    \"updated_at\": \"2025-08-07T01:40:03.000000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Aug 2025 03:29:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"nombre\": \"Proyecto de ejeiiimplo\",\n    \"fecha_inicio\": \"2025-08-06\",\n    \"estado\": \"En progiireso\",\n    \"responsable\": \"Juan Péiirez\",\n    \"monto\": \"15099900.00\",\n    \"created_at\": \"2025-08-07T01:40:03.000000Z\",\n    \"updated_at\": \"2025-08-07T03:29:50.000000Z\"\n}"
+				},
+				{
+					"name": "edicion de un proyecto",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Proye6977777777777778787879987098709870987687698678587658776cto de ejemplo\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{http://localhost:8000}}/api/proyectosAPI/2",
+							"host": [
+								"{{http://localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"proyectosAPI",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Aug 2025 00:15:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"nombre\": \"Proye6977777777777778787879987098709870987687698678587658776cto de ejemplo\",\n    \"fecha_inicio\": \"2025-02-05\",\n    \"estado\": \"activo\",\n    \"responsable\": \"Carlos Pérez\",\n    \"monto\": \"8000.00\",\n    \"created_at\": \"2025-08-16T00:07:46.000000Z\",\n    \"updated_at\": \"2025-08-16T00:15:05.000000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete de proyecto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzU1MjkxMDIxLCJleHAiOjE3NTUyOTQ2MjEsIm5iZiI6MTc1NTI5MTAyMSwianRpIjoiVkROakxpYTVCQzkyVXFiOCIsInN1YiI6IjIwIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.vfg2-Nmna4GDV5FeB-FHJJpPQtkTkBjEY1surTtHsR8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/proyectosAPI/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"proyectosAPI",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Aug 2025 03:30:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Proyecto eliminado correctamente\"\n}"
+				},
+				{
+					"name": "Delete de proyecto",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/proyectosAPI/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"proyectosAPI",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Aug 2025 00:15:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Proyecto eliminado correctamente\"\n}"
+				}
+			]
+		},
+		{
+			"name": "registro de usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"elco6666r\",\r\n    \"email\": \"q@q6666.cl\",\r\n    \"password\": \"123467858765876556789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"elcor\",\r\n    \"email\": \"histopat.cor@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Aug 2025 03:47:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"name\": \"elcor\",\n        \"email\": \"histopat.cor@gmail.com\",\n        \"updated_at\": \"2025-08-08T03:47:15.000000Z\",\n        \"created_at\": \"2025-08-08T03:47:15.000000Z\",\n        \"id\": 1\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzU0NjI0ODM2LCJleHAiOjE3NTQ2Mjg0MzYsIm5iZiI6MTc1NDYyNDgzNiwianRpIjoiSVNaU2ZEWHNKWms2ek1jaiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OKA5UzSplUgEbtzHT3ZmJ7HhN6iCnGRYWqLNh_J7gfA\"\n}"
+				},
+				{
+					"name": "registro de usuario",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"elco6666r\",\r\n    \"email\": \"q@q.cl\",\r\n    \"password\": \"1234678\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Aug 2025 00:15:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"name\": \"elco6666r\",\n        \"email\": \"q@q.cl\",\n        \"updated_at\": \"2025-08-16T00:15:51.000000Z\",\n        \"created_at\": \"2025-08-16T00:15:51.000000Z\",\n        \"id\": 18\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzU1MzAzMzUxLCJleHAiOjE3NTUzMDY5NTEsIm5iZiI6MTc1NTMwMzM1MSwianRpIjoiWVJoc3hqNEZnWmhpYUNkRyIsInN1YiI6IjE4IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.z_SQ5UcCDSHfxNm5JNtsvZf40gJb3pyk_Uba0otWpqY\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "payload",
+							"value": "{}",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"q@q.cl\",\r\n    \"password\": \"12346789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"histopat.cor@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Aug 2025 03:58:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzU0NjI1NDg5LCJleHAiOjE3NTQ2MjkwODksIm5iZiI6MTc1NDYyNTQ4OSwianRpIjoiNVY5NEwwV1JRQVhsZHlmbyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.a9iBrbTEu8CK1arh_GBqp9vBaKQkuOa9XDL506GtNkY\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/login",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "payload",
+							"value": "{}",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"q@q.cl\",\r\n    \"password\": \"1234678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "http://localhost:8000",
+			"value": "http://localhost:8000",
+			"type": "default"
+		}
+	]
+}
