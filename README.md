@@ -37,48 +37,26 @@ Accede a la aplicación en [http://localhost:8000/proyectos](http://localhost:80
 
 ##  Endpoints principales
 
+
+### **Endpoints de Autenticación API** (`routes/api.php`)
+| Método    | Endpoint           | Descripción                                 |
+|-----------|-------------------|---------------------------------------------|
+| **POST**  | `/api/register`   | Registrar un nuevo usuario y obtener token  |
+| **POST**  | `/api/login`      | Iniciar sesión y obtener token JWT          |
+
+
 ### **Endpoints API** (`routes/api.php`)
-|  Método  |  Endpoint                   |  Descripción                        |
-|------------|------------------------------|---------------------------------------|
-| **POST**   | `/api/login`                 | Iniciar sesión y obtener token JWT    |
-| **POST**   | `/api/register`              | Registrar un nuevo usuario            |
-| **GET**    | `/api/proyectosAPI`          | Listar todos los proyectos            |
-| **GET**    | `/api/proyectosAPI/{id}`     | Obtener proyecto por ID               |
-| **POST**   | `/api/proyectosAPI`          | Crear un nuevo proyecto               |
-| **PATCH**  | `/api/proyectosAPI/{id}`     | Actualizar proyecto por ID            |
-| **DELETE** | `/api/proyectosAPI/{id}`     | Eliminar proyecto por ID              |
-| **GET**    | `/api/user`                  | Obtener usuario autenticado (JWT)     |
+| Método    | Endpoint                      | Descripción                              |
+|-----------|------------------------------|------------------------------------------|
+| **GET**   | `/api/proyectosAPI`          | Listar todos los proyectos               |
+| **GET**   | `/api/proyectosAPI/{id}`     | Obtener proyecto por ID                  |
+| **POST**  | `/api/proyectosAPI`          | Crear un nuevo proyecto                  |
+| **PATCH** | `/api/proyectosAPI/{id}`     | Actualizar proyecto por ID               |
+| **DELETE**| `/api/proyectosAPI/{id}`     | Eliminar proyecto por ID                 |
 
 
 
-
-##  Autenticación JWT y uso en Postman
-1. **Registro de usuario:**
-  - Método: POST
-  - URL: `http://localhost:8000/api/register`
-  - Body (JSON):
-  ```json
-  {
-  "name": "Andrés Corbacho",
-  "email": "corbacho@gmail.com",
-  "password": "password123"
-  }
-  ```
-  - Recibirás un token JWT en la respuesta.
-
-2. **Login:**
-  - Método: POST
-  - URL: `http://localhost:8000/api/login`
-  - Body (JSON):
-  ```json
-  {
-  "email": "corbacho@gmail.com",
-  "password": "password123"
-  }
-  ```
-  - Recibirás un token JWT en la respuesta.
-
-3. **Usar el token en endpoints protegidos:**
+**Usar el token en endpoints protegidos:**
 
 
 ##  Ejemplo de uso de seeders y factories
